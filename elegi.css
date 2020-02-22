@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+  font-family: "Montserrat";
+}
+
+body {
+  width: 78%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.heading {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.heading_title {
+  text-align: center;
+  margin-bottom: 0.3em;
+  color: #22a5a5;
+}
+
+.heading_divisor {
+  width: 25%;
+  margin: 0 auto;
+  border: 3px #b043a1 solid;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.header_text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.header_text_title {
+  font-size: 3em;
+  margin-bottom: 0.4em;
+  color: #22a5a5;
+}
+
+.header_text_p {
+  font-size: 1.3em;
+  color: #22a5a5;
+}
+
+.header_text_p_strong {
+  font-weight: bolder;
+}
+
+.header_img {
+  height: 18em;
+  width: 45%;
+  background-image: url("./images/asana-header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.products_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products_details:first-of-type {
+  border-right: 1px solid #b144a1;
+}
+.products_details:last-of-type {
+  border-left: 1px solid #b144a1;
+}
+
+.products_name_left {
+  background-color: #b144a1;
+  position: relative;
+  left: -1%;
+  width: 98%;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+.products_name_right {
+  background-color: #b144a1;
+  position: relative;
+  left: 1%;
+  width: 98%;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.products_img {
+  width: 80%;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.products_img img {
+  width: 55%;
+  height: auto;
+}
+
+.products_price {
+  font-size: 1.8em;
+  color: #b144a1;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.products_buy {
+  padding: 1em;
+  width: 25%;
+  min-width: fit-content;
+  background-color: #22a5a5;
+  color: #fff;
+  font-size: 1em;
+  border: 1px solid #22a5a5;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.products_list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.products_list-item {
+  color: #b144a1;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.details_text {
+  width: 50%;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details_text:last-of-type {
+  background-color: #e7f6f3;
+  color: #22a5a5;
+}
+
+.details_text:first-of-type {
+  background-color: #8ad0c8;
+  color: #fff;
+}
+
+.details_image {
+  width: 50%;
+  height: 25em;
+}
+
+.details_image:first-of-type {
+  background-image: url("./images/yoga-girl.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details_image:last-of-type {
+  background-image: url("./images/friends.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details_text_title {
+  width: 70%;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.details_text_p {
+  width: 70%;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    width: 95%;
+  }
+  .header {
+    /* flex-direction: column;
+    align-items: center; */
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .header_text_title {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .header_text {
+    width: 80%;
+  }
+  .header_text_title {
+    font-size: 2.5em;
+  }
+  .header_img {
+    height: 18em;
+    width: 80%;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+  .products_details {
+    height: 100vh;
+    min-height: max-content;
+  }
+
+  .products_details:first-of-type {
+    border-right: 0px solid #b144a1;
+  }
+  .products_details:last-of-type {
+    border-left: 0px solid #b144a1;
+  }
+
+  .products_name_left {
+    background-color: #b144a1;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    color: #fff;
+  }
+
+  .products_name_right {
+    background-color: #b144a1;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .products_price {
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+  }
+  .products_buy {
+    padding: 0.6em;
+    width: 35%;
+    color: #fff;
+    margin-bottom: 0.6em;
+  }
+  .products_list {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .details_text {
+    width: 100%;
+    height: 60vh;
+    min-height: max-content;
+  }
+  .details_image {
+    width: 100%;
+    height: 60vh;
+  }
+}

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+  font-family: "Montserrat";
+}
+
+body {
+  width: 78%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.heading {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.heading_title {
+  text-align: center;
+  margin-bottom: 0.3em;
+  color: #22a5a5;
+}
+
+.heading_divisor {
+  width: 25%;
+  margin: 0 auto;
+  border: 3px #b043a1 solid;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.header_text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.header_text_title {
+  font-size: 3em;
+  margin-bottom: 0.4em;
+  color: #22a5a5;
+}
+
+.header_text_p {
+  font-size: 1.3em;
+  color: #22a5a5;
+}
+
+.header_text_p_strong {
+  font-weight: bolder;
+}
+
+.header_img {
+  height: 18em;
+  width: 45%;
+  background-image: url("./images/basura.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.details_text {
+  width: 50%;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details_text-left {
+  background-color: #e7f6f3;
+  color: #22a5a5;
+}
+
+.details_ask {
+  padding: 1em;
+  margin-top: 2em;
+  width: 25%;
+  min-width: fit-content;
+  background-color: #22a5a5;
+  color: #fff;
+  font-size: 1em;
+  border: 1px solid #22a5a5;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.details_text-right {
+  background-color: #8ad0c8;
+  color: #fff;
+}
+
+.details_image {
+  width: 50%;
+  height: 20em;
+}
+
+.image1 {
+  background-image: url("./images/manos.png");
+}
+
+.image2 {
+  background-image: url("./images/gente.png");
+}
+.image3 {
+  background-image: url("./images/copitas.png");
+}
+
+.image4 {
+  background-image: url("./images/apoyo.png");
+}
+.image5 {
+  background-image: url("./images/preguntas.png");
+}
+
+.details_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details_text_title {
+  width: 70%;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.details_text_subtitle {
+  width: 70%;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.details_text_p {
+  width: 70%;
+  line-height: 1.5;
+}
+
+.apoyo {
+  background-color: #fff;
+}
+.apoyo .details_text_title {
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    width: 95%;
+  }
+  .header {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .header_text_title {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .header_text {
+    width: 80%;
+  }
+  .header_text_title {
+    font-size: 2.5em;
+  }
+  .header_img {
+    height: 18em;
+    width: 80%;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  .details:nth-of-type(odd) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .details_text {
+    width: 100%;
+    height: 60vh;
+    min-height: max-content;
+  }
+  .details_image {
+    width: 100%;
+    height: 60vh;
+  }
+}
